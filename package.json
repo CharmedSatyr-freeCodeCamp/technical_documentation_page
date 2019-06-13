@@ -1,0 +1,27 @@
+{
+  "name": "technical_documentation_page",
+  "version": "0.0.1",
+  "description": "freeCodeCamp Responsive Web Design Projects - Build a Technical Documentation Page",
+  "author": "CharmedSatyr <z@charmed.tech>",
+  "license": "GPL-3.0-or-later",
+  "keywords": [
+    "freeCodeCamp"
+  ],
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Info: Tests provided by freeCodeCamp overlay. See script in `index.html`.\" && exit 0"
+  },
+  "homepage": "https://github.com/charmedsatyr-freecodecamp/technical_documentation_page#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charmedsatyr-freecodecamp/technical_documentation_page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/charmedsatyr-freecodecamp/technical_documentation_page/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
