@@ -1,3 +1,132 @@
-body {
-  background: #eeeeee;
+/* global */
+:root {
+  --accent-color: #9e2537;
+  --dark-color: #222222;
+  --gray-color: #aaaaaa;
+  --light-color: aliceblue;
+  --nav-width: 10%;
+}
+
+html, body {
+  background: var(--gray-color);
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+/* navbar */
+nav {
+  background-color: var(--dark-color);
+  float: left;
+  height: 100%;
+  overflow-x: hidden;
+  min-width: 10em;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  width: var(--nav-width);
+  z-index: 1;
+}
+
+nav > header {
+  color: var(--light-color);
+}
+
+nav > header > h4 {
+  font-size: 1em;
+  margin-bottom: 0;
+  padding: 3em 0 0 1.5em;
+}
+
+nav > header > ul {
+  list-style: none;
+  float: left;
+}
+
+nav > header > ul li::before { /* Make a custom list-style here so the bullets can be colored */
+  content: "\25AA"; /* square bullet */
+  color: var(--accent-color);
+  display: inline-block; width: 1em;
+  margin-left: -1em;
+}
+
+
+nav > header > ul li {
+  line-height: 3;
+}
+
+nav > header > ul li a {
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+
+nav > footer {
+  bottom: 2.5em;
+  color: var(--light-color);
+  position: absolute;
+  margin-left: 1.5em;
+}
+
+nav > footer a {
+  color: var(--accent-color);
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* Main */
+main {
+  margin-left: calc(var(--nav-width) + 10%); /* If --nav-width = 10%, 20% */
+  margin-right: calc(var(--nav-width) + 5%); /* ", 15% */
+  width: calc(100% - (2 * var(--nav-width)) - 12%); /* ", 100 - 2*10 [l,r margins] = 80 - 10 - 5 =  65% */
+}
+
+main > h1 {
+  text-align: center;
+}
+
+main > h1 > code {
+  color: var(--accent-color);
+  font-size: 1.5em;
+}
+
+main section { 
+  background-color: var(--light-color);
+  box-shadow: 0 0 1px var(--dark-color);
+  margin: 3em 0;
+  padding: 2em;
+}
+
+main section > header {
+  font-size: 1.5em;
+}
+
+main section > header, main section a {
+  font-weight: bold;
+}
+
+main section > figure > pre {
+  background-color: #deeaf7;
+  box-shadow: 0 0 1px var(--dark-color);
+  overflow-x: scroll;
+}
+
+main section > h4 {
+  margin-bottom: -0.5em;
+}
+
+/* Media Queries */
+@media screen and (max-width: 720px) {
+  main {
+    margin-left: 10em;
+    margin-right: 0;
+    width: calc(100% - 10em);
+  }
 }

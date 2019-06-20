@@ -14,23 +14,43 @@
   <body>
     <nav id='navbar'>
       <header>
-        <h1><code>Hello, world!</code>in 5 languages</h1>
-        <a href='#JavaScript' class='nav-link'>JavaScript</a>
-        <a href='#Python' class='nav-link'>Python</a>
-        <a href='#C#' class='nav-link'>C#</a>
-        <a href='#Rust' class='nav-link'>Rust</a>
-        <a href='#Assembly' class='nav-link'>Assembly</a>
+        <h4>Languages</h4>
+        <ul>
+          <li><a href='#JavaScript' class='nav-link'>JavaScript</a></li>
+          <li><a href='#Python' class='nav-link'>Python</a></li>
+          <li><a href='#C#' class='nav-link'>C#</a></li>
+          <li><a href='#Rust' class='nav-link'>Rust</a></li>
+          <li><a href='#Assembly' class='nav-link'>Assembly</a></li>
+        </ul>
+
       </header>
+      <footer>Source on <a
+          href='https://github.com/charmedsatyr-freecodecamp/technical_documentation_page'
+          target='_blank' rel='noopener noreferrer'>GitHub</a>
+      </footer>
     </nav>
 
     <main id='main-doc'>
+      <h1>How to say <code>Hello, world!</code> in 5 scripting languages</h1>
+
+      <!-- JavaScript -->
       <section class='main-section' id='JavaScript'>
         <header>JavaScript</header>
-        <p>Reference: https://javascript.info/hello-world</p>
-        <p>
-          <figure>
-            <pre class='prettyprint'>
-<code>  &lt;!DOCTYPE HTML&gt;
+        <p>JavaScript, often abbreviated as JS, is a high-level, interpreted
+          programming language that conforms to the ECMAScript specification. JavaScript has
+          curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class
+          functions.</p>
+        <p>Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide
+          Web. JavaScript enables interactive web pages and is an essential part of web
+          applications. The vast majority of websites use it, and major web browsers have a
+          dedicated JavaScript engine to execute it.</p>
+        <p>Source: <a href='https://en.wikipedia.org/wiki/Javascript' target='_blank'
+            rel='noopener noreferrer'>Wikipedia</a>
+        </p>
+        <figure>
+          <pre class='prettyprint'>
+<code class='lang-html lang-js'>  
+  &lt;!DOCTYPE HTML&gt;
   &lt;html&gt;
     &lt;body&gt;
       &lt;p&gt;Before the script...&lt;/p&gt;
@@ -41,37 +61,66 @@
     &lt;/body&gt;
   &lt;/html&gt;</code>
         </pre>
-          </figure>
-        </p>
+        </figure>
+        <h4>Notes</h4>
         <ul>
-          <li>Here is a detail about doing this in JavaScript</li>
+          <li>In this example, the JavaScript is embedded in HTML.</li>
+          <li>Our "Hello, world!" is inside the <code>&lt;script&gt;</code> tags.</li>
+          <li>If you run this code in your browser, you'll see a popup with the message!</li>
         </ul>
+        <p>Click <a href='https://javascript.info/hello-world' target='_blank'
+            rel='noopener noreferrer'>here</a> to learn more about this example.</p>
       </section>
 
+      <!-- Python -->
       <section class='main-section' id='Python'>
         <header>Python</header>
-        <p>Reference: https://www.programiz.com/python-programming/examples/hello-world</p>
-        <p>
-          <figure>
-            <pre class='prettyprint'>
-              <code>
+        <p>Python is an interpreted, high-level, general-purpose programming language. Created by
+          Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code
+          readability with its notable use of significant whitespace. Its language constructs and
+          object-oriented approach aims to help programmers write clear, logical code for small and
+          large-scale projects.</p>
+
+        <p>Source: <a href='https://en.wikipedia.org/wiki/Python_%28programming_language%29'
+            target='_blank' rel='noopener noreferrer'>Wikipedia</a>
+        </p>
+        <figure>
+          <pre class='prettyprint'>
+              <code class='lang-py'>
   # This program prints Hello, world!            
   
   print('Hello, world!')</code>
         </pre>
-          </figure>
-        </p>
+        </figure>
+        <h4>Notes</h4>
         <ul>
-          <li>Here is a detail about doing this in Python</li>
+          <li>This code is written in Python 3, which has slightly different syntax from Python 2.
+          </li>
+          <li>Python has lots of applications, but this code will run on your command line.</li>
+          <li>Check out the link below for tips on how to set up your environment to run this
+            script.</li>
         </ul>
+        <p>Click <a href='https://www.programiz.com/python-programming/examples/hello-world'
+            target='_blank' rel='noopener noreferrer'>here</a> to learn more about this example.</p>
       </section>
 
+      <!-- C# -->
       <section class='main-section' id='C#'>
         <header>C#</header>
-        <p>Reference: https://csharp.net-tutorials.com/getting-started/hello-world/</p>
+        <p>C# (pronounced C sharp) is a general-purpose, multi-paradigm programming language
+          encompassing strong typing, lexically scoped, imperative, declarative, functional,
+          generic, object-oriented (class-based), and component-oriented programming
+          disciplines. It was developed around 2000 by Microsoft within its .NET initiative and
+          later approved as a standard by Ecma (ECMA-334) and ISO (ISO/IEC 23270:2018). C# is one of
+          the programming languages designed for the Common Language Infrastructure.</p>
+
+        <p>C# was designed by Anders Hejlsberg, and its development team is currently led by Mads
+          Torgersen. The most recent version is C# 7.3, which was released in 2018 alongside Visual
+          Studio 2017 version 15.7.2.
+        </p>
         <figure>
           <pre class='prettyprint'>
-              <code>
+              <code class='lang-cs'>
   using System;
   using System.Collections.Generic;
   using System.Linq;
@@ -91,18 +140,39 @@
   }</code>
         </pre>
         </figure>
-
+        <h4>Notes</h4>
         <ul>
-          <li>Here is a detail about doing this in C#</li>
+          <li>Notice the class syntax for running this little function.</li>
+          <li>All the types are declared, and your "Hello, world!" is a class method.</li>
+          <li>Check out the link below for tips on how to set up your environment to run this
+            script.</li>
         </ul>
+        <p>Click <a href='https://csharp.net-tutorials.com/getting-started/hello-world/'
+            target='_blank' rel='noopener noreferrer'>here</a> to learn more about this example.</p>
       </section>
 
+      <!-- Rust -->
       <section class='main-section' id='Rust'>
         <header>Rust</header>
-        <p>Reference: https://doc.rust-lang.org/rust-by-example/hello.html</p>
+        <p>Rust is a multi-paradigm system programming language focused on safety, especially
+          safe concurrency. Rust is syntactically similar to C++, but is designed to
+          provide better memory safety while maintaining high performance.
+        </p>
+
+        <p>Rust was originally designed by Graydon Hoare at Mozilla Research, with contributions
+          from Dave Herman, Brendan Eich, and others. The designers refined the language
+          while writing the Servo layout or browser engine and the Rust compiler. The compiler
+          is free and open-source software dual-licensed under the MIT License and Apache License
+          2.0.</p>
+
+        <p>Rust was the "most loved programming language" in the Stack Overflow Developer Survey
+          for 2016, 2017, 2018, and 2019.</p>
+
+        <p>Source: <a href='https://en.wikipedia.org/wiki/Rust_(programming_language)'
+            target='_blank' rel='noopener noreferrer'>Wikipedia</a></p>
         <figure>
           <pre class='prettyprint'>
-              <code>
+              <code class='lang-rust'>
   // This is the main function
   fn main() {
   
@@ -110,22 +180,53 @@
     // when the compiled binary is called
 
     // Print text to the console
-    println!("Hello World!");
+    println!("Hello, world!");
   }</code>
   </pre>
         </figure>
-
+        <h4>Notes</h4>
         <ul>
-          <li>Here is a detail about doing this in Rust</li>
+          <li>Notice the standalone <code>println!</code> macro with our message inside. Not so
+            bad!</code></li>
+          <li>It's standard practice to wrap all of your Rust work in a <code>main</code> function,
+            as you see here.
+          </li>
+          <li><a href='https://github.com/rust-lang/rustlings/' target='_blank'
+              rel='noopener noreferrer'>Rustlings</a> is a great way to get started learning Rust!
+          </li>
         </ul>
+        <p>Click <a href='https://doc.rust-lang.org/rust-by-example/hello.html' target='_blank'
+            rel='noopener noreferrer'>here</a> to learn more about this example.</p>
       </section>
 
+      <!-- Assembly -->
       <section class='main-section' id='Assembly'>
         <header>Assembly</header>
-        <p>Reference: https://efxa.org/2011/03/02/assembly-gnulinux/</p>
+        <p>An assembly language (or assembler language), often abbreviated asm, is any low-level
+          programming language in which there is a very strong correspondence between the program's
+          statements and the architecture's machine code instructions.
+        </p>
+        <p>Assembly code is converted into executable machine code by a utility program referred to
+          as an assembler. The conversion process is referred to as assembly, or assembling the
+          source code. Assembly language usually has one statement per machine instruction, but
+          comments and statements that are assembler directives, macros, and symbolic
+          labels of program and memory locations are often also supported.</p>
+
+        <p>Each assembly language is specific to a particular computer architecture and sometimes to
+          an operating system. However, some assembly languages do not provide specific syntax
+          for operating system calls, and most assembly languages can be used universally with any
+          operating system, as the language provides access to all the real capabilities of the
+          processor, upon which all system call mechanisms ultimately rest. In contrast to assembly
+          languages, most high-level programming languages are generally portable across multiple
+          architectures but require interpreting or compiling.</p>
+
+        <p>Assembly language may also be called symbolic machine code.</p>
+        <p>Source: <a href='https://en.wikipedia.org/wiki/Assembly_language' target='_blank'
+            rel='noopener noreferrer'>Wikipedia</a>
+        </p>
         <figure>
           <pre class='prettyprint'>
-            <code>
+            <code class='lang-asm'>
   section .text
 
       global _start
@@ -138,24 +239,32 @@
           mov     ecx,msg   ; second argument: pointer to message to write.
           mov     ebx,1     ; first argument: file handle (stdout).
           mov     eax,4     ; system call number (sys_write).
-          int     0x80	  ; call kernel.
+          int     0x80	    ; call kernel.
   
           ; and exit.
   
-    mov	ebx,0	  ; first syscall argument: exit code.
+          mov	  ebx,0	    ; first syscall argument: exit code.
           mov     eax,1     ; system call number (sys_exit).
-          int     0x80	  ; call kernel.
+          int     0x80	    ; call kernel.
   
   section .data
   
   msg     db      "Hello, world!",0xa      ; the string to print.
-  len     equ     $ - msg                  ; length of the string.
-            </code>
+  len     equ     $ - msg                  ; length of the string.</code>
           </pre>
         </figure>
+        <h4>Notes</h4>
         <ul>
-          <li>Here is a detail about doing this in Assembly</li>
+          <li>This example uses Intel syntax. AT&T syntax can be used to write the same message.
+          </li>
+          <li>Comments in Intel syntax are preceded by the <code>;</code> character. Among other
+            differences, the <code>#</code> character is used in AT&T syntax.</li>
+          <li>Notice how detailed this example is. Assembly lets you give very specific instructions
+            to
+            the computer!</li>
         </ul>
+        <p>Click <a href='https://efxa.org/2011/03/02/assembly-gnulinux/' target='_blank'
+            rel='noopener noreferrer'>here</a> to learn more about this example.</p>
       </section>
 
     </main>
