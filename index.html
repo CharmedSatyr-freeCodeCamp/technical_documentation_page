@@ -7,17 +7,17 @@
     <meta name='author' content='CharmedSatyr'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technical Documentation Page</title>
-    <link rel="stylesheet" type="text/css" href="styles/reset.min.css">
-    <link rel="stylesheet" type="text/css" href="styles/index.css">
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
   </head>
 
   <body>
     <nav id='navbar'>
       <header>
-        We are documenting Web Assembly here.
+        <h1><code>Hello, world!</code>in 5 languages</h1>
         <a href='#JavaScript' class='nav-link'>JavaScript</a>
         <a href='#Python' class='nav-link'>Python</a>
-        <a href='#R' class='nav-link'>R</a>
+        <a href='#C#' class='nav-link'>C#</a>
         <a href='#Rust' class='nav-link'>Rust</a>
         <a href='#Assembly' class='nav-link'>Assembly</a>
       </header>
@@ -26,52 +26,143 @@
     <main id='main-doc'>
       <section class='main-section' id='JavaScript'>
         <header>JavaScript</header>
-        <p>1a</p>
-        <p><code>1b</code></p>
+        <p>Reference: https://javascript.info/hello-world</p>
+        <p>
+          <figure>
+            <pre class='prettyprint'>
+<code>  &lt;!DOCTYPE HTML&gt;
+  &lt;html&gt;
+    &lt;body&gt;
+      &lt;p&gt;Before the script...&lt;/p&gt;
+      &lt;script&gt;
+        alert('Hello, world!');
+      &lt;/script&gt;
+      &lt;p&gt;...After the script.&lt;/p&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;</code>
+        </pre>
+          </figure>
+        </p>
         <ul>
-          <li>q</li>
+          <li>Here is a detail about doing this in JavaScript</li>
         </ul>
       </section>
 
       <section class='main-section' id='Python'>
         <header>Python</header>
-        <p>2a</p>
-        <p><code>2b</code></p>
+        <p>Reference: https://www.programiz.com/python-programming/examples/hello-world</p>
+        <p>
+          <figure>
+            <pre class='prettyprint'>
+              <code>
+  # This program prints Hello, world!            
+  
+  print('Hello, world!')</code>
+        </pre>
+          </figure>
+        </p>
         <ul>
-          <li>q</li>
+          <li>Here is a detail about doing this in Python</li>
         </ul>
       </section>
 
-      <section class='main-section' id='R'>
-        <header>R</header>
-        <p>3a</p>
-        <p><code>3b</code></p>
+      <section class='main-section' id='C#'>
+        <header>C#</header>
+        <p>Reference: https://csharp.net-tutorials.com/getting-started/hello-world/</p>
+        <figure>
+          <pre class='prettyprint'>
+              <code>
+  using System;
+  using System.Collections.Generic;
+  using System.Linq;
+  using System.Text;
+  using System.Threading.Tasks;
+
+  namespace ConsoleApp1
+  {
+    class Program
+    {
+      static void Main(string[] args)
+      {
+      Console.WriteLine("Hello, world!");
+      Console.ReadLine();
+      }
+    }
+  }</code>
+        </pre>
+        </figure>
+
         <ul>
-          <li>q</li>
+          <li>Here is a detail about doing this in C#</li>
         </ul>
       </section>
 
       <section class='main-section' id='Rust'>
         <header>Rust</header>
-        <p>4a</p>
-        <p><code>4b</code></p>
+        <p>Reference: https://doc.rust-lang.org/rust-by-example/hello.html</p>
+        <figure>
+          <pre class='prettyprint'>
+              <code>
+  // This is the main function
+  fn main() {
+  
+    // The statements here will be executed
+    // when the compiled binary is called
+
+    // Print text to the console
+    println!("Hello World!");
+  }</code>
+  </pre>
+        </figure>
+
         <ul>
-          <li>q</li>
+          <li>Here is a detail about doing this in Rust</li>
         </ul>
       </section>
 
       <section class='main-section' id='Assembly'>
         <header>Assembly</header>
-        <p>5a</p>
-        <p><code>5b</code></p>
+        <p>Reference: https://efxa.org/2011/03/02/assembly-gnulinux/</p>
+        <figure>
+          <pre class='prettyprint'>
+            <code>
+  section .text
+
+      global _start
+  
+  _start:
+  
+          ; write our string to stdout.
+  
+          mov     edx,len   ; third argument: message length.
+          mov     ecx,msg   ; second argument: pointer to message to write.
+          mov     ebx,1     ; first argument: file handle (stdout).
+          mov     eax,4     ; system call number (sys_write).
+          int     0x80	  ; call kernel.
+  
+          ; and exit.
+  
+    mov	ebx,0	  ; first syscall argument: exit code.
+          mov     eax,1     ; system call number (sys_exit).
+          int     0x80	  ; call kernel.
+  
+  section .data
+  
+  msg     db      "Hello, world!",0xa      ; the string to print.
+  len     equ     $ - msg                  ; length of the string.
+            </code>
+          </pre>
+        </figure>
         <ul>
-          <li>q</li>
+          <li>Here is a detail about doing this in Assembly</li>
         </ul>
       </section>
 
     </main>
 
-    <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+    <script type='text/javascript' src='js/prettify.js'></script>
+    <script type='text/javascript' src="js/tests.js"></script>
+
   </body>
 
 </html>
