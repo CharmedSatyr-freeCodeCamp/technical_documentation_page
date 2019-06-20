@@ -4,7 +4,7 @@
 
 ### Author: [CharmedSatyr](https://github.com/CharmedSatyr)
 
-### Date Completed: N/A
+### Date Completed: June 20, 2019
 
 ### Links and Resources
 
