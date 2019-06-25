@@ -11,7 +11,6 @@
 * [Requirements](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page)
 * [GitHub Repository](https://github.com/charmedsatyr-freecodecamp/technical_documentation_page)
 * [GitHub Pages](https://charmedsatyr-freecodecamp.github.io/technical_documentation_page/)
-* [![Greenkeeper badge](https://badges.greenkeeper.io/charmedsatyr-freecodecamp/technical_documentation_page.svg)](https://greenkeeper.io/)
 
 ---
 
